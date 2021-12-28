@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="rockpaperscissor.css">
+</head>
+<body>
+    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+    <p>Choose your weapon and fight the computer!</p>
+    <form id="rockpaperscissorForm" target="dummyframe">
+        <div class="flex-container">
+        <div class="flex-item"><label for="rock" >Rock</label>
+        <input id = "rock" type="radio" value = "rock" name = "weapon"></div><br>
+        <div class="flex-item"></div><label for="paper">Paper</label>
+        <input id = "paper" type="radio" value = "paper" name = "weapon"></div><br>
+        <div class="flex-item"><label for="scissor">Scissor</label>
+        <input id = "scissor" type="radio" value = "scissor" name = "weapon"></div><br><br>
+        </div>
+        <input type="submit" id="submit" value="Rock, paper, scissor, shoe!">
+    </form>
+
+    <div>
+        <p id = "computer"></p>
+        <p id = "results"></p>
+    </div>
+    <div style="display: flex; flex-flow: row wrap;">
+        <div><span>User Wins: </span><span id="userWinCount"></span></div>
+        <div><span>Ties: </span><span id="tieCount"></span></div>
+        <div><span>Computer Wins: </span><span id="compWinCount"></span></div>
+    </div>
+    <script src="rockpaperscissor.js"></script>
+</body>
+</html>
